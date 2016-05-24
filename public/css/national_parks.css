@@ -6,20 +6,46 @@ body {
     font-weight: bold;
 }
 
+.margin {
+    margin-top: 15px;
+}
+
+.input-field label.active {
+    font-size: 1.3em;
+}
+
 table, tr, th, td {
-    border: 2px solid #0d0706;
+    border: 2px solid #141714;
     border-collapse: collapse;
 }
 
 tr:nth-child(even) {
-    /*background-color: #e7dad8;*/
+    background-color: #c8e6c9;
 }
 
 tr:nth-child(odd) {
-    /*background-color: #c5a49e;*/
+    background-color: #e8f5e9;
 }
 
 .btn, button {
     border: 1px solid;
     border-radius: 5px;
 }
+
+/* label color */
+.input-field label {
+ color: #1b5e20;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field #description:focus + label {
+ color: #33691e;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus, .input-field #description:focus {
+ border-bottom: 1px solid #1b5e20;
+ box-shadow: 0 1px 0 0 #1b5e20;
+}
+
+
