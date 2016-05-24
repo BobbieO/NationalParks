@@ -85,6 +85,10 @@ function pageController($dbc) {
 
     <!-- font -->
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
+     <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
     <!-- my css -->
     <link rel="stylesheet" type="text/css" href="/css/national_parks.css">
 
@@ -179,6 +183,9 @@ function pageController($dbc) {
         <a href="?page=<?= $totalPages ?>" class="btn btn-default">Last</a>
     <?php endif; ?>
 </footer>
+
+ <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>        
 </body>
 </html>
 
