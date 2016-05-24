@@ -2,57 +2,13 @@ body {
     font-family: 'Droid Serif', serif;
 }
 
-h1 {
-   /* font-size: 3em;
-    text-align: center;
-    margin-top: 50px;
-    color: ;
-    text-shadow: 2px 2px #0d0706;*/
-}
-
-h3 {
-    /*color: #0d0706;*/
-}
-
 .bold {
     font-weight: bold;
-}
-
-.margin {
-  /*  margin-right: 30px;
-    margin-top: 8px;*/
-}
-
-table {
-   /* width: 75%;*/
-}
-.errors {
-    /*width: 65%;
-    color: #e7dad8;
-    text-shadow: 2px 2px #0d0706;
-    margin: 20px auto;
-    text-align: center;*/
-}
-
-form {
-   /* margin-top: 30px;
-    width: 55%;
-    background-color: #c5a49e;
-    border-radius: 2px;
-    margin: 30px auto;*/
 }
 
 table, tr, th, td {
     border: 2px solid #0d0706;
     border-collapse: collapse;
-    /*padding: 8px;*/
-    /*margin: 0 auto;*/
-}
-
-.shadow {
-    /*box-shadow: 4px 4px 2px #0d0706;
-    border: 2px solid #0d0706;
-    text-align: center;*/
 }
 
 tr:nth-child(even) {
@@ -63,16 +19,7 @@ tr:nth-child(odd) {
     /*background-color: #c5a49e;*/
 }
 
-.footer {
-   /* text-align: center;
-    margin: 30px;*/
-}
-
 .btn, button {
-  /*  padding: 10px;
-    border: 2px solid #0d0706;
+    border: 1px solid;
     border-radius: 5px;
-    box-shadow: 4px 4px 2px #0d0706;
-    background-color: #e7dad8;
-    color: #0d0706;*/
 }
