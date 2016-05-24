@@ -1,19 +1,17 @@
 body {
-    background: url(/img/parks.jpeg) no-repeat center fixed;
-    background-size: cover;
     font-family: 'Droid Serif', serif;
 }
 
 h1 {
-    font-size: 3em;
+   /* font-size: 3em;
     text-align: center;
     margin-top: 50px;
-    color: #e7dad8;
-    text-shadow: 2px 2px #0d0706;
+    color: ;
+    text-shadow: 2px 2px #0d0706;*/
 }
 
 h3 {
-    color: #0d0706;
+    /*color: #0d0706;*/
 }
 
 .bold {
@@ -21,60 +19,60 @@ h3 {
 }
 
 .margin {
-    margin-right: 30px;
-    margin-top: 8px;
+  /*  margin-right: 30px;
+    margin-top: 8px;*/
 }
 
 table {
-    width: 75%;
+   /* width: 75%;*/
 }
 .errors {
-    width: 65%;
+    /*width: 65%;
     color: #e7dad8;
     text-shadow: 2px 2px #0d0706;
     margin: 20px auto;
-    text-align: center;
+    text-align: center;*/
 }
 
 form {
-    margin-top: 30px;
+   /* margin-top: 30px;
     width: 55%;
     background-color: #c5a49e;
     border-radius: 2px;
-    margin: 30px auto;
+    margin: 30px auto;*/
 }
 
 table, tr, th, td {
     border: 2px solid #0d0706;
     border-collapse: collapse;
-    padding: 8px;
-    margin: 0 auto;
+    /*padding: 8px;*/
+    /*margin: 0 auto;*/
 }
 
 .shadow {
-    box-shadow: 4px 4px 2px #0d0706;
+    /*box-shadow: 4px 4px 2px #0d0706;
     border: 2px solid #0d0706;
-    text-align: center;
+    text-align: center;*/
 }
 
 tr:nth-child(even) {
-    background-color: #e7dad8;
+    /*background-color: #e7dad8;*/
 }
 
 tr:nth-child(odd) {
-    background-color: #c5a49e;
+    /*background-color: #c5a49e;*/
 }
 
 .footer {
-    text-align: center;
-    margin: 30px;
+   /* text-align: center;
+    margin: 30px;*/
 }
 
 .btn, button {
-    padding: 10px;
+  /*  padding: 10px;
     border: 2px solid #0d0706;
     border-radius: 5px;
     box-shadow: 4px 4px 2px #0d0706;
     background-color: #e7dad8;
-    color: #0d0706;
+    color: #0d0706;*/
 }

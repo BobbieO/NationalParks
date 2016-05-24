@@ -95,9 +95,20 @@ function pageController($dbc) {
 </head>
 <body>
 
-<div>
-    <h1>National Parks of the United States</h1>
-    <div>
+<div class="container">
+    <div class="section">
+        <div class="header row valign-wrapper">
+            <div class="col s3">
+                <img src="/img/natParkService.jpg">
+            </div>
+            <div class="col s9">
+                <h1 class="green-text text-darken-4">National Parks of the United States</h1>
+            </div>  
+        </div>
+    </div>
+
+    
+    <div class="section">
         <table class="shadow">
             <tr class="bold">
                 <th>Name</th>
@@ -115,16 +126,18 @@ function pageController($dbc) {
                 <td><?= escape($park['description']); ?></td></tr>
             <?php endforeach; ?>
         </table>
+    </div>
 
-        <div class="errors">
-            <?php foreach($errors as $error) : ?>
-                <p><?= $error; ?></p>
-            <?php endforeach; ?>
-        </div>
+    <div class="section errors">
+        <?php foreach($errors as $error) : ?>
+            <p><?= $error; ?></p>
+        <?php endforeach; ?>
+    </div>
 
+    <div class="section">
         <form method="POST">
             <div class="form shadow">
-            <h3 class="bold">Add a Park</h3>
+            <h3 class="green-text text-darken-4">Add a Park</h3>
                 <p>
                     <span class="margin">
                         <label for="name">Park Name</label>
@@ -157,16 +170,16 @@ function pageController($dbc) {
                     <textarea id="description" name="description" placeholder="Tell us about it!" REQUIRED><?= (isset($_POST['description'])) ? $_POST['description']: ''; ?></textarea>
                 </p>
                 <p>
-                    <input type="submit" value="Send Your Park Info!">
+                    <input class="btn btn-default" type="submit" value="Send Your Park Info!">
                 </p>
             </div>
         </form>
-    </div>
+    </div>  
 </div>
 
 <footer class="footer"> 
     <?php if($page > 1): ?> 
-        <a href="/national_parks.php" class="btn btn-default">First</a>
+        <a href="/index.php" class="btn btn-default">First</a>
     <?php endif; ?>
 
     <?php if($page >= 2): ?> 
