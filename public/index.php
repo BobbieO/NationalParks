@@ -183,9 +183,9 @@ function pageController($dbc) {
         <a href="?page=<?= $totalPages ?>" class="btn btn-default">Last</a>
     <?php endif; ?>
 </footer>
-
- <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>        
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>        
 </body>
 </html>
 
