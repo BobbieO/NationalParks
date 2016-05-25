@@ -158,9 +158,12 @@ function pageController($dbc) {
         <div>
             <form method="POST">
 
-            <div class="row col s12">
-                <h3 class="green-text text-darken-4 center-align">Add a Park</h3>
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="green-text text-darken-4 center-align">Add a Park</h3>
+                </div>
             </div>
+
 
             <div class="row">
                 <div class="input-field col s6">
@@ -178,11 +181,9 @@ function pageController($dbc) {
 
             <div class="row">
                 <div class="input-field col s6">
-                    <div class="input-field col s6">
-                        <label for="date_established">Date Established</label>
-                        <input id="date_established" name="date_established" type="text" placeholder="YYYY-MM-DD format" REQUIRED
-                            value="<?= (isset($_POST['date_established'])) ? $_POST['date_established']: ''; ?>">
-                    </div>
+                    <label for="date_established">Date Established</label>
+                    <input id="date_established" name="date_established" type="text" placeholder="YYYY-MM-DD format" REQUIRED
+                        value="<?= (isset($_POST['date_established'])) ? $_POST['date_established']: ''; ?>">
                 </div>
                 
                 <div class="input-field col s6">
@@ -192,13 +193,17 @@ function pageController($dbc) {
                 </div>
             </div>
                  
-            <div class="row input-field col s12">          
-                <label for="description" class="margin">Description</label>
-                <textarea class="materialize-textarea" id="description" name="description" placeholder="Tell us about it!" REQUIRED><?= (isset($_POST['description'])) ? $_POST['description']: ''; ?></textarea>
+            <div class="row">
+                <div class="input-field col s12">          
+                    <label for="description" class="margin">Description</label>
+                    <textarea class="materialize-textarea" id="description" name="description" placeholder="Tell us about it!" REQUIRED><?= (isset($_POST['description'])) ? $_POST['description']: ''; ?></textarea>
+                </div>
             </div>
 
-            <div class="row col s12">
-                <input class="btn btn-default green darken-4 z-depth-1" type="submit" value="Add">
+            <div class="row">
+                <div class="col s12">
+                    <input class="btn btn-default green darken-4 z-depth-1" type="submit" value="Add">
+                </div>
             </div>
 
             </form>
