@@ -107,23 +107,35 @@ function pageController($dbc) {
         </div>
 
         <div class="section center-align">
-            <?php if($page > 1): ?> 
-                <a href="/index.php" class="btn btn-default green darken-4 z-depth-2">First</a>
-            <?php endif; ?>
+            <div class="row">
+            <div class="col s2">
+                <?php if($page > 1): ?> 
+                    <a href="/index.php" class="btn btn-default green darken-4 z-depth-2">First</a>
+                <?php endif; ?>
+            </div>
 
-            <?php if($page >= 2): ?> 
-                <a href="?page=<?= $page - 1 ?>" class="btn btn-default green darken-4 z-depth-2">Previous</a>
-            <?php endif; ?>
+            <div class="col s2">
+                <?php if($page >= 2): ?> 
+                    <a href="?page=<?= $page - 1 ?>" class="btn btn-default green darken-4 z-depth-2">Previous</a>
+                <?php endif; ?>
+            </div>
 
-            <button class="btn btn-default green darken-4 z-depth-2">Page <?=$page; ?></button>
-            
-            <?php if($page < $totalPages ): ?>
-                <a href="?page=<?= $page + 1 ?>" class="btn btn-default green darken-4 z-depth-2">Next</a>
-            <?php endif; ?>
+            <div class="col s2">
+                <button class="btn btn-default green darken-4 z-depth-2">Page <?=$page; ?></button>
+            </div>
 
-            <?php if($page < $totalPages ): ?>
-                <a href="?page=<?= $totalPages ?>" class="btn btn-default green darken-4 z-depth-2">Last</a>
-            <?php endif; ?>
+            <div class="col s2">
+                <?php if($page < $totalPages ): ?>
+                    <a href="?page=<?= $page + 1 ?>" class="btn btn-default green darken-4 z-depth-2">Next</a>
+                <?php endif; ?>
+            </div>
+
+            <div class="col s2">
+                <?php if($page < $totalPages ): ?>
+                    <a href="?page=<?= $totalPages ?>" class="btn btn-default green darken-4 z-depth-2">Last</a>
+                <?php endif; ?>
+            </div>
+            </div>
         </div>
         
         <div class="row">
